@@ -4,7 +4,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Plus, X, BookOpen, Target, TrendingUp, Users, Calendar, BarChart3 } from "lucide-react";
+import { Plus, X, BookOpen, Target, TrendingUp, Users, Calendar, BarChart3, ArrowLeft, User } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SkillProgress from "@/components/SkillProgress";
@@ -59,14 +60,30 @@ const Dashboard = () => {
       <Navbar isAuthenticated={true} />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Welcome Section */}
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-foreground mb-2">
-            Welcome back, Alex! 👋
-          </h1>
-          <p className="text-muted-foreground">
-            Ready to learn something new or share your expertise?
-          </p>
+        {/* Header with Navigation */}
+        <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center space-x-4">
+            <Link to="/">
+              <Button variant="ghost" size="sm" className="flex items-center space-x-2">
+                <ArrowLeft className="w-4 h-4" />
+                <span>Home</span>
+              </Button>
+            </Link>
+            <div>
+              <h1 className="text-3xl font-bold text-foreground">
+                Welcome back, Alex! 👋
+              </h1>
+              <p className="text-muted-foreground">
+                Ready to learn something new or share your expertise?
+              </p>
+            </div>
+          </div>
+          <Link to="/profile">
+            <Button variant="outline" className="flex items-center space-x-2">
+              <User className="w-4 h-4" />
+              <span className="hidden sm:inline">Profile</span>
+            </Button>
+          </Link>
         </div>
 
         <Tabs defaultValue="overview" className="space-y-8">
