@@ -19,9 +19,11 @@ const Navbar = ({ isAuthenticated = false }: NavbarProps) => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <BookOpen className="w-5 h-5 text-primary-foreground" />
-              </div>
+              <img 
+                src="/lovable-uploads/7fad9778-6421-4fcd-bcb5-9aa547565a53.png" 
+                alt="SkillSwap Logo" 
+                className="w-8 h-8 rounded-full"
+              />
               <span className="text-xl font-bold text-foreground">SkillSwap</span>
             </Link>
           </div>
