@@ -18,7 +18,7 @@ const Landing = () => {
             <div className="text-center lg:text-left">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  Swap Skills.
+                  skillx
                 </span>
                 <br />
                 Grow Together.
@@ -60,7 +60,7 @@ const Landing = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              How SkillSwap Works
+              How skillx Works
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Three simple steps to start your learning journey
@@ -113,7 +113,7 @@ const Landing = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-                Why Choose SkillSwap?
+                Why Choose skillx?
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">

@@ -9,10 +9,12 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <BookOpen className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold text-foreground">SkillSwap</span>
+              <img 
+                src="/lovable-uploads/7fad9778-6421-4fcd-bcb5-9aa547565a53.png" 
+                alt="skillx Logo" 
+                className="w-8 h-8 rounded-full"
+              />
+              <span className="text-xl font-bold text-foreground">skillx</span>
             </div>
             <p className="text-muted-foreground max-w-md">
               Connect with learners worldwide. Teach what you know, learn what you want. 
@@ -101,7 +103,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 SkillSwap. All rights reserved.
+            © 2024 skillx. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">

@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     toast({
       title: "Welcome back!",
-      description: "You've successfully logged in to SkillSwap."
+      description: "You've successfully logged in to skillx."
     });
     // Simulate successful login and redirect to dashboard
     setTimeout(() => {
@@ -41,10 +41,12 @@ const Login = () => {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center">
-              <BookOpen className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <span className="text-2xl font-bold text-foreground">SkillSwap</span>
+            <img 
+              src="/lovable-uploads/7fad9778-6421-4fcd-bcb5-9aa547565a53.png" 
+              alt="skillx Logo" 
+              className="w-10 h-10 rounded-full"
+            />
+            <span className="text-2xl font-bold text-foreground">skillx</span>
           </Link>
         </div>
 
@@ -118,7 +120,7 @@ const Login = () => {
                 </div>
                 <div className="relative flex justify-center text-sm">
                   <span className="px-2 bg-card text-muted-foreground">
-                    New to SkillSwap?
+                    New to skillx?
                   </span>
                 </div>
               </div>
