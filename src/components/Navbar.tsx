@@ -24,7 +24,7 @@ const Navbar = ({ isAuthenticated = false }: NavbarProps) => {
                 alt="SkillSwap Logo" 
                 className="w-8 h-8 rounded-full"
               />
-              <span className="text-xl font-bold text-foreground">SkillSwap</span>
+              <span className="text-xl font-bold text-foreground">skillx</span>
             </Link>
           </div>
 
